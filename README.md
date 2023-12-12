@@ -15,7 +15,7 @@
 
 
 ## Referencia
-- ![Alt text](/assets/image01.png)
+- ![Alt text](/prova_senai/assets/image01.png)
 - 
 
 ```mermaid
