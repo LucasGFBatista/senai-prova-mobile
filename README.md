@@ -1,16 +1,16 @@
 # Prova Senai
 
 ## Telas a serem feitas
-- [ ] [Tela 1 - Boas vindas](/lib/welcome.dart)
-- [ ] [Opção cadastro ou login](/lib/welcome.dart)
-	- [ ] [Formulário cadastro(/lib/singup.dart)]
-	- [ ] [Formulário de Login](/lib/login.dart)
+- [ ] [Tela 1 - Boas vindas](/prova_senai/lib/welcome.dart)
+- [ ] [Opção cadastro ou login](/prova_senai/lib/welcome.dart)
+	- [ ] [Formulário cadastro(/prova_senai/lib/singup.dart)]
+	- [ ] [Formulário de Login](/prova_senai/lib/login.dart)
 - [ ] Seleção Nível de dificuldade
 - [ ] Tela ensinando algo em inglês
 - [ ] Teste de compreensão (Questões de múltiplas escolhas)
 - [ ] Sidebar
-    - [ ] [Tela de progressos](/lib/progress.dart)
-    - [ ] [Tela de perfil de acesso](/lib/profile.dart)
+    - [ ] [Tela de progressos](/prova_senai/lib/progress.dart)
+    - [ ] [Tela de perfil de acesso](/prova_senai/lib/profile.dart)
         (Poder atualizar os dados do perfil)
 
 
