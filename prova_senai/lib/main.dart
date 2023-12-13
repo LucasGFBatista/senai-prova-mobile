@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prova_senai/pages/login.page.dart';
+import 'package:prova_senai/pages/onboard.page.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'HiperLínguas',
       theme: ThemeData(primarySwatch: Colors.teal),
-      home: LoginPage(),
+      home: WelcomePage(),
     );
   }
 }
