@@ -31,7 +31,7 @@ id1 --> login[Já tenho cadastro];
 
 singup --> formSingup[Formulario de cadastro];
 formSingup --> formLogin;
-login --> formLogin[Formulario de login] 
+login --> formLogin[Formulario de login];
 formLogin--> selectLevel{- Inicianante
 - Intermediario
 - Avançado};
