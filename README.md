@@ -18,8 +18,11 @@
 - ![Alt text](/prova_senai/assets/image01.png)
 - 
 
+
+---
+
 ```mermaid
-flowchart TD
+graph TD
 
 Welcome[Tela Bem vindo] --> id1{Login ou Criar conta}
 
