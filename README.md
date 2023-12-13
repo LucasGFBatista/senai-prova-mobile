@@ -3,8 +3,8 @@
 ## Telas a serem feitas
 - [ ] [Tela 1 - Boas vindas](/prova_senai/lib/pages/welcome.dart)
 - [ ] [Opção cadastro ou login](/prova_senai/lib/pages/welcome.dart)
-	- [ ] [Formulário cadastro(/prova_senai/lib/pages/singup.dart)]
-	- [ ] [Formulário de Login](/prova_senai/lib/pages/login.dart)
+	- [ ] [Formulário cadastro](/prova_senai/lib/pages/singup.page.dart)
+	- [ ] [Formulário de Login](/prova_senai/lib/pages/login.page.dart)
 - [ ] Seleção Nível de dificuldade
 - [ ] Tela ensinando algo em inglês
 - [ ] Teste de compreensão (Questões de múltiplas escolhas)
@@ -38,4 +38,4 @@ formLogin--> selectLevel{- Inicianante
 
 selectLevel --> teachSometing[Ensinar algo];
 teachSometing --> comprehension[Teste de compreensão];
- ```
+```
