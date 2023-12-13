@@ -24,7 +24,7 @@
 ```mermaid
 graph TD;
 
-Welcome[Tela Bem vindo] --> id1{Login ou Criar conta}
+Welcome[Tela Bem vindo] --> id1{Login ou Criar conta};
 
 id1 --> singup[Criar conta];
 id1 --> login[Já tenho cadastro];
