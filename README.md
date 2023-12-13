@@ -22,7 +22,7 @@
 ---
 
 ```mermaid
-graph TD
+graph TD;
 
 Welcome[Tela Bem vindo] --> id1{Login ou Criar conta}
 
