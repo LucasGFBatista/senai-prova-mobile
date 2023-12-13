@@ -29,8 +29,10 @@ Welcome[Tela Bem vindo] --> id1{Login ou Criar conta}
 id1 --> singup[Criar conta];
 id1 --> login[Já tenho cadastro];
 
-singup --> formSingup[Formulario de cadastro] --> formLogin;
-login --> formLogin[Formulario de login] --> selectLevel{- Inicianante
+singup --> formSingup[Formulario de cadastro];
+formSingup --> formLogin;
+login --> formLogin[Formulario de login] 
+formLogin--> selectLevel{- Inicianante
 - Intermediario
 - Avançado};
 
