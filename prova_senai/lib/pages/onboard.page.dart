@@ -33,7 +33,7 @@ class _WelcomePageState extends State<WelcomePage> {
               SizedBox(height: 50),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue,
+                  backgroundColor: Colors.blue,
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
@@ -55,7 +55,7 @@ class _WelcomePageState extends State<WelcomePage> {
               SizedBox(height: 15),
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
-                  primary: Colors.blue,
+                backgroundColor: Colors.blue[50],
                   side: BorderSide(color: Colors.blue),
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
@@ -63,7 +63,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SingupPage(),
+                      builder: (context) => SignupPage(),
                     ),
                   );
                 },
