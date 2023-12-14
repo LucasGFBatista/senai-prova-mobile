@@ -15,40 +15,64 @@ class _WelcomePageState extends State<WelcomePage> {
     return Scaffold(
       backgroundColor: Colors.blue[50],
       body: Padding(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(20),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.blue,
+              Text(
+                "Bem-vindo ao HiperLínguas",
+                style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 50),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.blue,
+                  padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LoginPage(),
-                      ));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoginPage(),
+                    ),
+                  );
                 },
                 child: Text(
                   "Login",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
                 ),
               ),
-              Divider(),
-              TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.blue,
+              SizedBox(height: 15),
+              OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  primary: Colors.blue,
+                  side: BorderSide(color: Colors.blue),
+                  padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SingupPage()));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SingupPage(),
+                    ),
+                  );
                 },
                 child: Text(
                   "Criar conta",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 18,
+                  ),
                 ),
               ),
             ],
