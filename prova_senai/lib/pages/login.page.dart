@@ -10,9 +10,9 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
-  final AuthService _authService = AuthService();
+
+TextEditingController emailController = TextEditingController();
+TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 30),
               TextFormField(
-                controller: _emailController,
+                controller: emailController,
                 autofocus: true,
                 keyboardType: TextInputType.emailAddress,
                 style: TextStyle(color: Colors.black, fontSize: 18),
@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 20),
               TextFormField(
-                controller: _passwordController,
+               controller: passwordController,
                 obscureText: true,
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.black, fontSize: 18),
@@ -65,16 +65,16 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue,
+                  backgroundColor: Colors.blue,
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () async {
-                  String email = _emailController.text;
-                  String password = _passwordController.text;
+                  String email = emailController.text;
+                  String password = passwordController.text;
 
-                  bool loggedIn = await _authService.login(email, password);
+              
 
-                  if (loggedIn) {
+                  if (/*loggedIn*/) {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(

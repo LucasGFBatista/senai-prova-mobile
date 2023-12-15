@@ -1,46 +1,56 @@
-import 'dart:async';
+// databaseLinguas.dart
+
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
 class DatabaseLinguas {
-  static final DatabaseLinguas _instance = DatabaseLinguas.internal();
-  factory DatabaseLinguas() => _instance;
+  static _recuperarBancoDados() async {
+    final caminhoBancoDados = await getDatabasesPath();
+    final localBancoDados = join(caminhoBancoDados, "hiper_linguas");
 
-  static Database? _db;
+    var bd = await openDatabase(
+      localBancoDados,
+      version: 1,
+      onCreate: (db, dbVersaoAtual) {
+        String sql =
+            'CREATE TABLE users(id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, email VARCHAR, password VARCHAR)';
+        db.execute(sql);
+      },
+    );
+    return bd;
+  }
 
-  Future<Database> get db async {
-    if (_db != null) {
-      return _db!;
+  static salvarUsuario(String name, String email, String password) async {
+    Database bd = await _recuperarBancoDados();
+    Map<String, dynamic> dadosUsuario = {
+      "name": name,
+      "email": email,
+      "password": password,
+    };
+
+    int id = await bd.insert("users", dadosUsuario);
+    print("Usuário cadastrado com ID: $id");
+  }
+
+  static listarusers() async {
+    Database bd = await _recuperarBancoDados();
+    String sql = "select * from users";
+    List<Map<String, dynamic>> users = await bd.rawQuery(sql);
+
+    for (var usuario in users) {
+      print("ID: ${usuario['id']}, name: ${usuario['name']}, E-mail: ${usuario['email']}");
     }
-    _db = await initDb();
-    return _db!;
   }
 
-  DatabaseLinguas.internal();
-
-  Future<Database> initDb() async {
-    String databasesPath = await getDatabasesPath();
-    String path = join(databasesPath, 'login.db');
-
-    return await openDatabase(path, version: 1, onCreate: _onCreate);
-  }
-
-  void _onCreate(Database db, int newVersion) async {
-    await db.execute(
-      'CREATE TABLE users (id INTEGER PRIMARY KEY, email TEXT, password TEXT)',
-    );
-  }
-
-  Future<int> saveUser(String email, String password) async {
-    var client = await db;
-    return client.insert(
-      'users',
-      {'email': email, 'password': password},
-    );
-  }
-
-  Future<List<Map<String, dynamic>>> getUsers() async {
-    var client = await db;
-    return client.query('users');
+  static atualizarUsuario(int id, String newName, String newEmail, String newPassword) async {
+    Database bd = await _recuperarBancoDados();
+    Map<String, dynamic> dadosUsuario = {
+      "name": newName,
+      "email": newEmail,
+      "password": newPassword,
+    };
+    int retorno = await bd.update("users", dadosUsuario,
+        where: "id=?", whereArgs: [id]);
+    print(retorno);
   }
 }
