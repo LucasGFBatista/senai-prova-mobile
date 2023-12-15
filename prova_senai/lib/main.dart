@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prova_senai/pages/onboard.page.dart';
+import 'package:prova_senai/pages/login.page.dart';
+//import 'package:prova_senai/pages/onboard.page.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'HiperLínguas',
       theme: ThemeData(primarySwatch: Colors.teal),
-      home: WelcomePage(),
+      
+      //Tem que iniciar com essa tela, mas para teste tô colocando como login
+      //home: WelcomePage (),
+      home: LoginPage(),
     );
   }
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:prova_senai/pages/home.page.dart';
+import 'package:prova_senai/services/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -8,6 +10,10 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final AuthService _authService = AuthService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,6 +40,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 30),
               TextFormField(
+                controller: _emailController,
                 autofocus: true,
                 keyboardType: TextInputType.emailAddress,
                 style: TextStyle(color: Colors.black, fontSize: 18),
@@ -45,6 +52,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 20),
               TextFormField(
+                controller: _passwordController,
                 obscureText: true,
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.black, fontSize: 18),
@@ -60,8 +68,38 @@ class _LoginPageState extends State<LoginPage> {
                   primary: Colors.blue,
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
-                onPressed: () {
-                  // Adicione a lógica para o botão "Entrar" aqui
+                onPressed: () async {
+                  String email = _emailController.text;
+                  String password = _passwordController.text;
+
+                  bool loggedIn = await _authService.login(email, password);
+
+                  if (loggedIn) {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              HomePage()), // Substitua HomePage() pela sua classe de tela inicial
+                    );
+                  } else {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text("Erro de Login"),
+                          content: Text("E-mail ou senha inválidos."),
+                          actions: <Widget>[
+                            TextButton(
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                              child: Text("OK"),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  }
                 },
                 child: Text(
                   "Entrar",
