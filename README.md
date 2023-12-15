@@ -1,5 +1,36 @@
 # Prova Senai
 
+## Como rodar o projeto
+
+
+### Pré-requisitos
+- Certifique-se de ter o Flutter instalado em sua máquina. Para informações sobre como instalar o Flutter, consulte a [documentação oficial do Flutter](https://flutter.dev/docs/get-started/install).
+
+### Passos para executar o projeto
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/LucasGFBatista/senai-prova-mobile.git
+
+   cd prova_senai
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Execute o aplicativo:**
+   ```bash
+   flutter run
+   ```
+   Certifique-se de que um emulador esteja em execução ou que um dispositivo físico esteja conectado.
+
+4. **Explore o aplicativo:**
+   O aplicativo será iniciado no dispositivo/emulador, e você poderá explorar as diferentes telas conforme a descrição fornecida no arquivo README.
+
+---
+
 ## Título: Aprender vocabulário básico em inglês
 
 - **Como** um usuário iniciante interessado em aprender inglês
@@ -58,13 +89,7 @@
     - [ ] [Tela de perfil de acesso](/prova_senai/lib/pages/profile.dart)
         (Poder atualizar os dados do perfil)
 
-
-## Referencia
-- ![Alt text](/prova_senai/assets/image01.png)
-- 
-
-
----
+### Possivel Fluxo do sistema
 
 ```mermaid
 graph TD;
@@ -74,9 +99,9 @@ Welcome[Tela Bem vindo] --> id1{Login ou Criar conta};
 id1 --> singup[Criar conta];
 id1 --> login[Já tenho cadastro];
 
-singup --> formSingup[Formulario de cadastro];
+singup --> formSingup[Formulário de cadastro];
 formSingup --> formLogin;
-login --> formLogin[Formulario de login];
+login --> formLogin[Formulário de login];
 formLogin--> selectLevel{- Inicianante
 - Intermediario
 - Avançado};
@@ -84,3 +109,14 @@ formLogin--> selectLevel{- Inicianante
 selectLevel --> teachSometing[Ensinar algo];
 teachSometing --> comprehension[Teste de compreensão];
 ```
+
+
+## Referencia
+- ![Alt text](/prova_senai/assets/image01.png)
+- 
+
+
+---
+
+
+
