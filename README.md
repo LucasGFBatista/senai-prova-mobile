@@ -102,9 +102,7 @@ id1 --> login[Já tenho cadastro];
 singup --> formSingup[Formulário de cadastro];
 formSingup --> formLogin;
 login --> formLogin[Formulário de login];
-formLogin--> selectLevel{- Inicianante
-- Intermediario
-- Avançado};
+formLogin--> selectLevel{- Inicianante - Intermediario - Avançado};
 
 selectLevel --> teachSometing[Ensinar algo];
 teachSometing --> comprehension[Teste de compreensão];
