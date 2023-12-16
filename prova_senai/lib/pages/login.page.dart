@@ -78,8 +78,7 @@ TextEditingController passwordController = TextEditingController();
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                          builder: (context) =>
-                              HomePage()), 
+                          builder: (context) => HomePage()), 
                     );
                   } else {
                     showDialog(
