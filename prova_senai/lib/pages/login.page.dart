@@ -79,7 +79,7 @@ TextEditingController passwordController = TextEditingController();
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              HomePage()), // Substitua HomePage() pela sua classe de tela inicial
+                              HomePage()), 
                     );
                   } else {
                     showDialog(
