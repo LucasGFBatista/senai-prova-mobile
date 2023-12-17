@@ -10,9 +10,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
-TextEditingController emailController = TextEditingController();
-TextEditingController passwordController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +51,7 @@ TextEditingController passwordController = TextEditingController();
               ),
               SizedBox(height: 20),
               TextFormField(
-               controller: passwordController,
+                controller: passwordController,
                 obscureText: true,
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.black, fontSize: 18),
@@ -69,6 +68,7 @@ TextEditingController passwordController = TextEditingController();
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () async {
+                  /*
                   String email = emailController.text;
                   String password = passwordController.text;
 
@@ -99,6 +99,7 @@ TextEditingController passwordController = TextEditingController();
                       },
                     );
                   }
+                */
                 },
                 child: Text(
                   "Entrar",
