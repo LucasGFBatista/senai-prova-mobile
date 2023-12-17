@@ -81,8 +81,8 @@
         - [ ] Lógica de cadastro (inserção de novo usuario no banco de dados)
 	- [x] [Formulário de Login](/prova_senai/lib/pages/login.page.dart)
         - [ ] Lógica de login e verificação no banco de dados
-- [ ] Seleção Nível de dificuldade
-- [ ] Tela ensinando algo em inglês
+- [x] Seleção Nível de dificuldade
+- [x] Tela ensinando algo em inglês
 - [ ] Teste de compreensão (Questões de múltiplas escolhas)
 - [ ] Sidebar
     - [ ] [Tela de progressos](/prova_senai/lib/pages/progress.dart)
