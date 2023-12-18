@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:prova_senai/pages/home.page.dart';
 import 'package:prova_senai/services/auth_service.dart';
+import 'package:prova_senai/services/databaseLinguas.dart';
+import 'package:prova_senai/pages/levels.page.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
+  AuthService authService = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -68,17 +72,15 @@ class _LoginPageState extends State<LoginPage> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () async {
-                  /*
-                  String email = emailController.text;
-                  String password = passwordController.text;
+                  String email = emailController.text.trim();
+                  String password = passwordController.text.trim();
 
-              
+                  bool loginSuccess = await authService.login(email, password);
 
-                  if (/*loggedIn*/) {
+                  if (loginSuccess) {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => HomePage()), 
+                      MaterialPageRoute(builder: (context) => LevelChoise()),
                     );
                   } else {
                     showDialog(
@@ -99,7 +101,6 @@ class _LoginPageState extends State<LoginPage> {
                       },
                     );
                   }
-                */
                 },
                 child: Text(
                   "Entrar",
