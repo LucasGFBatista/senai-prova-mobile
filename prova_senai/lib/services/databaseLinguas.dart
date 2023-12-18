@@ -1,10 +1,8 @@
-// databaseLinguas.dart
-
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
 class DatabaseLinguas {
-  static _recuperarBancoDados() async {
+  static _databaseLinguas() async {
     final caminhoBancoDados = await getDatabasesPath();
     final localBancoDados = join(caminhoBancoDados, "hiper_linguas");
 
@@ -22,7 +20,7 @@ class DatabaseLinguas {
 
   // Salvar user
   static saveUser(String name, String email, String password) async {
-    Database bd = await _recuperarBancoDados();
+    Database bd = await _databaseLinguas();
     Map<String, dynamic> dataUser = {
       "name": name,
       "email": email,
@@ -35,7 +33,7 @@ class DatabaseLinguas {
 
   // Listar users
   static listUsers() async {
-    Database bd = await _recuperarBancoDados();
+    Database bd = await _databaseLinguas();
     String sql = "select * from users";
     List<Map<String, dynamic>> users = await bd.rawQuery(sql);
 
@@ -48,7 +46,7 @@ class DatabaseLinguas {
   // Atualizar user
   static updateUser(
       int id, String newName, String newEmail, String newPassword) async {
-    Database bd = await _recuperarBancoDados();
+    Database bd = await _databaseLinguas();
     Map<String, dynamic> dataUser = {
       "name": newName,
       "email": newEmail,
@@ -61,7 +59,7 @@ class DatabaseLinguas {
 
   // Esse aqui é para pegar o user por nome
   static Future<Map<String, dynamic>?> getUserByName(String name) async {
-    Database bd = await _recuperarBancoDados();
+    Database bd = await _databaseLinguas();
 
     List<Map<String, dynamic>> users = await bd.query(
       "users",
@@ -78,7 +76,7 @@ class DatabaseLinguas {
 
 // Função pegar usuario por email, para usar no loggin
   static Future<Map<String, dynamic>?> getUserByEmail(String email) async {
-    Database bd = await _recuperarBancoDados();
+    Database bd = await _databaseLinguas();
 
     List<Map<String, dynamic>> users = await bd.query(
       "users",
