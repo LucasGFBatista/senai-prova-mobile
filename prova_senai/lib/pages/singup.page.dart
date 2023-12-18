@@ -9,11 +9,9 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
-
-TextEditingController nameController = TextEditingController();
-TextEditingController emailController = TextEditingController();
-TextEditingController passwordController = TextEditingController();
-
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -96,12 +94,8 @@ TextEditingController passwordController = TextEditingController();
                   onPressed: () {
                     // Hudson, temos que ver depois como vai ser feito essa parte
 
-
-                  DatabaseLinguas.salvarUsuario(
-                  nameController.text,
-                  emailController.text,
-                  passwordController.text);
-
+                    DatabaseLinguas.saveUser(nameController.text,
+                        emailController.text, passwordController.text);
                   },
                   child: Text(
                     "Criar Conta",
