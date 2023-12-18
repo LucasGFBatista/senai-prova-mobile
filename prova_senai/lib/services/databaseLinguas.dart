@@ -20,37 +20,60 @@ class DatabaseLinguas {
     return bd;
   }
 
-  static salvarUsuario(String name, String email, String password) async {
+  // Salvar user
+  static saveUser(String name, String email, String password) async {
     Database bd = await _recuperarBancoDados();
-    Map<String, dynamic> dadosUsuario = {
+    Map<String, dynamic> dataUser = {
       "name": name,
       "email": email,
       "password": password,
     };
 
-    int id = await bd.insert("users", dadosUsuario);
+    int id = await bd.insert("users", dataUser);
     print("Usuário cadastrado com ID: $id");
   }
 
-  static listarusers() async {
+  // Listar users
+  static listUsers() async {
     Database bd = await _recuperarBancoDados();
     String sql = "select * from users";
     List<Map<String, dynamic>> users = await bd.rawQuery(sql);
 
-    for (var usuario in users) {
-      print("ID: ${usuario['id']}, name: ${usuario['name']}, E-mail: ${usuario['email']}");
+    for (var user in users) {
+      print("ID: ${user['id']}, name: ${user['name']}, E-mail: ${user['email']}");
     }
   }
 
-  static atualizarUsuario(int id, String newName, String newEmail, String newPassword) async {
+  // Atualizar user
+  static updateUser(int id, String newName, String newEmail, String newPassword) async {
     Database bd = await _recuperarBancoDados();
-    Map<String, dynamic> dadosUsuario = {
+    Map<String, dynamic> dataUser = {
       "name": newName,
       "email": newEmail,
       "password": newPassword,
     };
-    int retorno = await bd.update("users", dadosUsuario,
+    int retorno = await bd.update("users", dataUser,
         where: "id=?", whereArgs: [id]);
     print(retorno);
   }
+
+
+  // Esse aqui é para pegar o user por nome, para usar no loggin
+  static Future<Map<String, dynamic>?> getUserByName(String name) async {
+    Database bd = await _recuperarBancoDados();
+
+    List<Map<String, dynamic>> users = await bd.query(
+      "users",
+      where: "name = ?",
+      whereArgs: [name],
+    );
+
+    if (users.isNotEmpty) {
+      return users.first;
+    } else {
+      return null;
+    }
+  }
+
+
 }
