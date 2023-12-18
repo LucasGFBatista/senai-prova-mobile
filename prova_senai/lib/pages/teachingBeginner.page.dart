@@ -35,12 +35,12 @@ class _Teaching1State extends State<Teaching1> {
                 ),
                 SizedBox(height: 30),
                 Text(
-                    "Hello (Olá): Uma saudação amigável e geral. \n  Exemplo: Hello, how are you? (Olá, como você está?) \n\nHi (Oi): Uma forma casual e informal de dizer olá. \n  Exemplo: Hi! Nice to meet you (Oi, prazer em te conhecer). \n\nHow are you? (como você está?): Uma maneira de perguntar sobre o bem-estar de alguém.\n  Exemplo: How are you today?(Como você está hoje?).",
-                    style: TextStyle(
-                      fontSize: 16,
-                      //fontWeight: FontWeight.bold,
-                      color: Color(0xff104570),
-                    )),
+                  "Hello (Olá): Uma saudação amigável e geral. \nExemplo: Hello, how are you? (Olá, como você está?) \n\nHi (Oi): Uma forma casual e informal de dizer olá. \n  Exemplo: Hi! Nice to meet you (Oi, prazer em te conhecer). \n\nHow are you? (como você está?): Uma maneira de perguntar sobre o bem-estar de alguém.\n  Exemplo: How are you today?(Como você está hoje?).",
+                  style: TextStyle(
+                    fontSize: 16, //fontWeight: FontWeight.bold,
+                    color: Color(0xff104570),
+                  ),
+                ),
                 SizedBox(height: 40),
 
                 //Botão de criar conta
@@ -49,7 +49,10 @@ class _Teaching1State extends State<Teaching1> {
                     backgroundColor: Colors.blue,
                     padding: EdgeInsets.symmetric(vertical: 15),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    // Adicione lógica para avançar para a próxima etapa
+                    print("Click avançar");
+                  },
                   child: Text(
                     "Avançar",
                     style: TextStyle(
