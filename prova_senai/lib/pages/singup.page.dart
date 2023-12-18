@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prova_senai/pages/login.page.dart';
 import 'package:prova_senai/services/databaseLinguas.dart';
 import 'package:prova_senai/services/auth_service.dart';
 
@@ -10,12 +11,11 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
-
   //Controllers
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  TextEditingController ConfirmPasswordController = TextEditingController();
+  TextEditingController confirmPasswordController = TextEditingController();
 
   //Autenticação
   AuthService authService = AuthService();
@@ -101,11 +101,12 @@ class _SignupPageState extends State<SignupPage> {
                   onPressed: () async {
                     String name = nameController.text;
                     String email = emailController.text;
-                    String password= passwordController.text;
-                    String confitmPassword = ConfirmPasswordController.text;
+                    String password = passwordController.text;
+                    String confirmPassword = confirmPasswordController.text;
 
                     // Verifica se o e-mail já está cadastrado
-                    bool emailExists = await authService.verifyNewAccount(email);
+                    bool emailExists =
+                        await authService.verifyNewAccount(email);
 
                     if (emailExists) {
                       // Exibe mensagem de erro
@@ -128,9 +129,32 @@ class _SignupPageState extends State<SignupPage> {
                         },
                       );
                     } else {
-                      
                       //Salvar no banco de dados
                       DatabaseLinguas.saveUser(name, email, password);
+
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text("Conta Criada"),
+                            content: Text("Conta criada com sucesso!"),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                  Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => LoginPage()),
+                                  );
+                                },
+                                child: Text("OK"),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+
                       print("Conta criada");
                     }
                   },
