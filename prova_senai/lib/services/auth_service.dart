@@ -19,10 +19,10 @@ class AuthService {
 
     if (user != null && user['email'] == email) {
       //email já cadastrado,
-      return false;
+      return true;
     } else {
       //email não cadastrado, pode cadastrar nova conta
-      return true;
+      return false;
     }
   }
 }
