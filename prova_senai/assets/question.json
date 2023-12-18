@@ -1,0 +1,784 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "level": "iniciante",
+            "question": "O que significa 'Goodbye' em português?",
+            "options": [
+                "Adeus",
+                "Olá",
+                "Tchau",
+                "Bom dia"
+            ],
+            "correctAnswer": "Adeus",
+            "explanation": "A palavra 'Goodbye' em inglês significa 'Adeus' em português."
+        },
+        {
+            "id": 2,
+            "level": "iniciante",
+            "question": "O que significa 'Thank you' em português?",
+            "options": [
+                "Desculpe",
+                "Sim",
+                "Não",
+                "Obrigado"
+            ],
+            "correctAnswer": "Obrigado",
+            "explanation": "A expressão 'Thank you' em inglês significa 'Obrigado' em português."
+        },
+        {
+            "id": 3,
+            "level": "iniciante",
+            "question": "Como se diz 'Sim' em inglês?",
+            "options": [
+                "No",
+                "Yes",
+                "Maybe",
+                "Always"
+            ],
+            "correctAnswer": "Yes",
+            "explanation": "A palavra 'Yes' em inglês significa 'Sim' em português."
+        },
+        {
+            "id": 4,
+            "level": "iniciante",
+            "question": "O que significa 'I love you' em português?",
+            "options": [
+                "Eu te odeio",
+                "Eu te amo",
+                "Eu te entendo",
+                "Eu te vejo"
+            ],
+            "correctAnswer": "Eu te amo",
+            "explanation": "A expressão 'I love you' em inglês significa 'Eu te amo' em português."
+        },
+        {
+            "id": 5,
+            "level": "iniciante",
+            "question": "Como se diz 'água' em inglês?",
+            "options": [
+                "Sun",
+                "Water",
+                "Fire",
+                "Earth"
+            ],
+            "correctAnswer": "Water",
+            "explanation": "A palavra 'Water' em inglês significa 'Água' em português."
+        },
+        {
+            "id": 6,
+            "level": "iniciante",
+            "question": "O que significa 'Hello' em português?",
+            "options": [
+                "Adeus",
+                "Tchau",
+                "Olá",
+                "Bom dia"
+            ],
+            "correctAnswer": "Olá",
+            "explanation": "A palavra 'Hello' em inglês significa 'Olá' em português."
+        },
+        {
+            "id": 7,
+            "level": "iniciante",
+            "question": "Como se diz 'Livro' em inglês?",
+            "options": [
+                "Book",
+                "Table",
+                "Chair",
+                "Lamp"
+            ],
+            "correctAnswer": "Book",
+            "explanation": "A palavra 'Book' em inglês significa 'Livro' em português."
+        },
+        {
+            "id": 8,
+            "level": "iniciante",
+            "question": "O que significa 'Please' em português?",
+            "options": [
+                "Por favor",
+                "Obrigado",
+                "Desculpe",
+                "Sim"
+            ],
+            "correctAnswer": "Por favor",
+            "explanation": "A palavra 'Please' em inglês significa 'Por favor' em português."
+        },
+        {
+            "id": 9,
+            "level": "iniciante",
+            "question": "Como se diz 'Gato' em inglês?",
+            "options": [
+                "Dog",
+                "Cat",
+                "Fish",
+                "Bird"
+            ],
+            "correctAnswer": "Cat",
+            "explanation": "A palavra 'Cat' em inglês significa 'Gato' em português."
+        },
+        {
+            "id": 10,
+            "level": "iniciante",
+            "question": "O que significa 'How are you?' em português?",
+            "options": [
+                "Quem é você?",
+                "Como você está?",
+                "Onde você mora?",
+                "Qual é o seu nome?"
+            ],
+            "correctAnswer": "Como você está?",
+            "explanation": "A expressão 'How are you?' em inglês significa 'Como você está?' em português."
+        },
+        {
+            "id": 11,
+            "level": "iniciante",
+            "question": "Como se diz 'Pão' em inglês?",
+            "options": [
+                "Butter",
+                "Bread",
+                "Cheese",
+                "Milk"
+            ],
+            "correctAnswer": "Bread",
+            "explanation": "A palavra 'Bread' em inglês significa 'Pão' em português."
+        },
+        {
+            "id": 12,
+            "level": "iniciante",
+            "question": "O que significa 'Sorry' em português?",
+            "options": [
+                "Feliz",
+                "Triste",
+                "Desculpe",
+                "Alegre"
+            ],
+            "correctAnswer": "Desculpe",
+            "explanation": "A palavra 'Sorry' em inglês significa 'Desculpe' em português."
+        },
+        {
+            "id": 13,
+            "level": "iniciante",
+            "question": "Como se diz 'Casa' em inglês?",
+            "options": [
+                "House",
+                "Tree",
+                "River",
+                "Mountain"
+            ],
+            "correctAnswer": "House",
+            "explanation": "A palavra 'House' em inglês significa 'Casa' em português."
+        },
+        {
+            "id": 14,
+            "level": "iniciante",
+            "question": "O que significa 'Friend' em português?",
+            "options": [
+                "Amigo",
+                "Inimigo",
+                "Família",
+                "Desconhecido"
+            ],
+            "correctAnswer": "Amigo",
+            "explanation": "A palavra 'Friend' em inglês significa 'Amigo' em português."
+        },
+        {
+            "id": 15,
+            "level": "iniciante",
+            "question": "Como se diz 'Verde' em inglês?",
+            "options": [
+                "Red",
+                "Blue",
+                "Green",
+                "Yellow"
+            ],
+            "correctAnswer": "Green",
+            "explanation": "A palavra 'Green' em inglês significa 'Verde' em português."
+        },
+        {
+            "id": 16,
+            "level": "iniciante",
+            "question": "O que significa 'Where is the bathroom?' em português?",
+            "options": [
+                "Onde está o banheiro?",
+                "Onde está a cozinha?",
+                "Onde está o quarto?",
+                "Onde está a sala?"
+            ],
+            "correctAnswer": "Onde está o banheiro?",
+            "explanation": "A expressão 'Where is the bathroom?' em inglês significa 'Onde está o banheiro?' em português."
+        },
+        {
+            "id": 17,
+            "level": "iniciante",
+            "question": "Como se diz 'Sol' em inglês?",
+            "options": [
+                "Moon",
+                "Star",
+                "Sun",
+                "Cloud"
+            ],
+            "correctAnswer": "Sun",
+            "explanation": "A palavra 'Sun' em inglês significa 'Sol' em português."
+        },
+        {
+            "id": 18,
+            "level": "iniciante",
+            "question": "O que significa 'Big' em português?",
+            "options": [
+                "Pequeno",
+                "Médio",
+                "Grande",
+                "Enorme"
+            ],
+            "correctAnswer": "Grande",
+            "explanation": "A palavra 'Big' em inglês significa 'Grande' em português."
+        },
+        {
+            "id": 19,
+            "level": "iniciante",
+            "question": "Como se diz 'Maçã' em inglês?",
+            "options": [
+                "Banana",
+                "Apple",
+                "Orange",
+                "Grapes"
+            ],
+            "correctAnswer": "Apple",
+            "explanation": "A palavra 'Apple' em inglês significa 'Maçã' em português."
+        },
+        {
+            "id": 20,
+            "level": "iniciante",
+            "question": "O que significa 'Happy' em português?",
+            "options": [
+                "Feliz",
+                "Triste",
+                "Assustado",
+                "Bravo"
+            ],
+            "correctAnswer": "Feliz",
+            "explanation": "A palavra 'Happy' em inglês significa 'Feliz' em português."
+        },
+        {
+            "id": 21,
+            "level": "intermediario",
+            "question": "Como se diz 'Cachorro' em inglês?",
+            "options": [
+                "Cat",
+                "Dog",
+                "Mouse",
+                "Elephant"
+            ],
+            "correctAnswer": "Dog",
+            "explanation": "A palavra 'Dog' em inglês significa 'Cachorro' em português."
+        },
+        {
+            "id": 22,
+            "level": "intermediario",
+            "question": "O que significa 'Good morning' em português?",
+            "options": [
+                "Boa tarde",
+                "Boa noite",
+                "Bom dia",
+                "Boa viagem"
+            ],
+            "correctAnswer": "Bom dia",
+            "explanation": "A expressão 'Good morning' em inglês significa 'Bom dia' em português."
+        },
+        {
+            "id": 23,
+            "level": "intermediario",
+            "question": "Qual é o oposto de 'Fast' em inglês?",
+            "options": [
+                "Slow",
+                "Quick",
+                "Steady",
+                "Rapid"
+            ],
+            "correctAnswer": "Slow",
+            "explanation": "A palavra 'Slow' em inglês significa 'Lento' em português e é o oposto de 'Fast'."
+        },
+        {
+            "id": 24,
+            "level": "intermediario",
+            "question": "O que significa 'Computer' em português?",
+            "options": [
+                "Televisão",
+                "Computador",
+                "Telefone",
+                "Rádio"
+            ],
+            "correctAnswer": "Computador",
+            "explanation": "A palavra 'Computer' em inglês significa 'Computador' em português."
+        },
+        {
+            "id": 25,
+            "level": "intermediario",
+            "question": "Como se diz 'Almoço' em inglês?",
+            "options": [
+                "Dinner",
+                "Lunch",
+                "Breakfast",
+                "Snack"
+            ],
+            "correctAnswer": "Lunch",
+            "explanation": "A palavra 'Lunch' em inglês significa 'Almoço' em português."
+        },
+        {
+            "id": 26,
+            "level": "intermediario",
+            "question": "O que significa 'Weather' em português?",
+            "options": [
+                "Tempo",
+                "Estação",
+                "Clima",
+                "Ventania"
+            ],
+            "correctAnswer": "Clima",
+            "explanation": "A palavra 'Weather' em inglês significa 'Clima' em português."
+        },
+        {
+            "id": 27,
+            "level": "intermediario",
+            "question": "Qual é o significado de 'Travel' em português?",
+            "options": [
+                "Trabalhar",
+                "Viajar",
+                "Estudar",
+                "Correr"
+            ],
+            "correctAnswer": "Viajar",
+            "explanation": "A palavra 'Travel' em inglês significa 'Viajar' em português."
+        },
+        {
+            "id": 28,
+            "level": "intermediario",
+            "question": "O que significa 'City' em português?",
+            "options": [
+                "Vila",
+                "Cidade",
+                "Campo",
+                "Floresta"
+            ],
+            "correctAnswer": "Cidade",
+            "explanation": "A palavra 'City' em inglês significa 'Cidade' em português."
+        },
+        {
+            "id": 29,
+            "level": "intermediario",
+            "question": "Como se diz 'Telefone' em inglês?",
+            "options": [
+                "Radio",
+                "Television",
+                "Telephone",
+                "Computer"
+            ],
+            "correctAnswer": "Telephone",
+            "explanation": "A palavra 'Telephone' em inglês significa 'Telefone' em português."
+        },
+        {
+            "id": 30,
+            "level": "intermediario",
+            "question": "O que significa 'Happiness' em português?",
+            "options": [
+                "Tristeza",
+                "Alegria",
+                "Medo",
+                "Raiva"
+            ],
+            "correctAnswer": "Alegria",
+            "explanation": "A palavra 'Happiness' em inglês significa 'Alegria' em português."
+        },
+        {
+            "id": 31,
+            "level": "intermediario",
+            "question": "Como se diz 'Bola' em inglês?",
+            "options": [
+                "Ball",
+                "Circle",
+                "Square",
+                "Triangle"
+            ],
+            "correctAnswer": "Ball",
+            "explanation": "A palavra 'Ball' em inglês significa 'Bola' em português."
+        },
+        {
+            "id": 32,
+            "level": "intermediario",
+            "question": "O que significa 'Education' em português?",
+            "options": [
+                "Educação",
+                "Trabalho",
+                "Diversão",
+                "Esporte"
+            ],
+            "correctAnswer": "Educação",
+            "explanation": "A palavra 'Education' em inglês significa 'Educação' em português."
+        },
+        {
+            "id": 33,
+            "level": "intermediario",
+            "question": "Qual é o oposto de 'Happy' em inglês?",
+            "options": [
+                "Sad",
+                "Angry",
+                "Fearful",
+                "Surprised"
+            ],
+            "correctAnswer": "Sad",
+            "explanation": "A palavra 'Sad' em inglês significa 'Triste' em português e é o oposto de 'Happy'."
+        },
+        {
+            "id": 34,
+            "level": "intermediario",
+            "question": "Como se diz 'Trabalho' em inglês?",
+            "options": [
+                "Study",
+                "Work",
+                "Play",
+                "Sleep"
+            ],
+            "correctAnswer": "Work",
+            "explanation": "A palavra 'Work' em inglês significa 'Trabalho' em português."
+        },
+        {
+            "id": 35,
+            "level": "intermediario",
+            "question": "O que significa 'Music' em português?",
+            "options": [
+                "Música",
+                "Pintura",
+                "Dança",
+                "Teatro"
+            ],
+            "correctAnswer": "Música",
+            "explanation": "A palavra 'Music' em inglês significa 'Música' em português."
+        },
+        {
+            "id": 36,
+            "level": "intermediario",
+            "question": "Qual é o significado de 'Friendship' em português?",
+            "options": [
+                "Inimizade",
+                "Amizade",
+                "Relacionamento",
+                "Solidão"
+            ],
+            "correctAnswer": "Amizade",
+            "explanation": "A palavra 'Friendship' em inglês significa 'Amizade' em português."
+        },
+        {
+            "id": 37,
+            "level": "intermediario",
+            "question": "Como se diz 'Carro' em inglês?",
+            "options": [
+                "Car",
+                "Bike",
+                "Bus",
+                "Train"
+            ],
+            "correctAnswer": "Car",
+            "explanation": "A palavra 'Car' em inglês significa 'Carro' em português."
+        },
+        {
+            "id": 38,
+            "level": "intermediario",
+            "question": "O que significa 'Nature' em português?",
+            "options": [
+                "Natureza",
+                "Construção",
+                "Tecnologia",
+                "Cidade"
+            ],
+            "correctAnswer": "Natureza",
+            "explanation": "A palavra 'Nature' em inglês significa 'Natureza' em português."
+        },
+        {
+            "id": 39,
+            "level": "intermediario",
+            "question": "Qual é o oposto de 'Cold' em inglês?",
+            "options": [
+                "Hot",
+                "Warm",
+                "Freezing",
+                "Cool"
+            ],
+            "correctAnswer": "Hot",
+            "explanation": "A palavra 'Hot' em inglês significa 'Quente' em português e é o oposto de 'Cold'."
+        },
+        {
+            "id": 40,
+            "level": "intermediario",
+            "question": "O que significa 'Family' em português?",
+            "options": [
+                "Família",
+                "Amigos",
+                "Vizinhos",
+                "Desconhecidos"
+            ],
+            "correctAnswer": "Família",
+            "explanation": "A palavra 'Family' em inglês significa 'Família' em português."
+        },
+        {
+            "id": 41,
+            "level": "avancado",
+            "question": "Como se diz 'Eletrodoméstico' em inglês?",
+            "options": [
+                "Appliance",
+                "Gadget",
+                "Device",
+                "Machine"
+            ],
+            "correctAnswer": "Appliance",
+            "explanation": "A palavra 'Appliance' em inglês significa 'Eletrodoméstico' em português."
+        },
+        {
+            "id": 42,
+            "level": "avancado",
+            "question": "O que significa 'Sustainable' em português?",
+            "options": [
+                "Sustentável",
+                "Superficial",
+                "Sensível",
+                "Substancial"
+            ],
+            "correctAnswer": "Sustentável",
+            "explanation": "A palavra 'Sustainable' em inglês significa 'Sustentável' em português."
+        },
+        {
+            "id": 43,
+            "level": "avancado",
+            "question": "Qual é o oposto de 'Conventional' em inglês?",
+            "options": [
+                "Modern",
+                "Traditional",
+                "Ordinary",
+                "Common"
+            ],
+            "correctAnswer": "Modern",
+            "explanation": "A palavra 'Conventional' em inglês significa 'Convencional' em português e seu oposto é 'Modern'."
+        },
+        {
+            "id": 44,
+            "level": "avancado",
+            "question": "O que significa 'Ubiquitous' em português?",
+            "options": [
+                "Único",
+                "Ubíquo",
+                "Uniforme",
+                "Utilitário"
+            ],
+            "correctAnswer": "Ubíquo",
+            "explanation": "A palavra 'Ubiquitous' em inglês significa 'Ubíquo' em português."
+        },
+        {
+            "id": 45,
+            "level": "avancado",
+            "question": "Como se diz 'Compreensão' em inglês?",
+            "options": [
+                "Comprehension",
+                "Understanding",
+                "Inclusion",
+                "Perception"
+            ],
+            "correctAnswer": "Comprehension",
+            "explanation": "A palavra 'Comprehension' em inglês significa 'Compreensão' em português."
+        },
+        {
+            "id": 46,
+            "level": "avancado",
+            "question": "O que significa 'Ephemeral' em português?",
+            "options": [
+                "Eterno",
+                "Efêmero",
+                "Elétrico",
+                "Especial"
+            ],
+            "correctAnswer": "Efêmero",
+            "explanation": "A palavra 'Ephemeral' em inglês significa 'Efêmero' em português."
+        },
+        {
+            "id": 47,
+            "level": "avancado",
+            "question": "Qual é o significado de 'Ineffable' em português?",
+            "options": [
+                "Inefável",
+                "Ineficaz",
+                "Ineficiente",
+                "Inexistente"
+            ],
+            "correctAnswer": "Inefável",
+            "explanation": "A palavra 'Ineffable' em inglês significa 'Inefável' em português."
+        },
+        {
+            "id": 48,
+            "level": "avancado",
+            "question": "O que significa 'Equanimity' em português?",
+            "options": [
+                "Equanimidade",
+                "Equidade",
+                "Equilíbrio",
+                "Equidade"
+            ],
+            "correctAnswer": "Equanimidade",
+            "explanation": "A palavra 'Equanimity' em inglês significa 'Equanimidade' em português."
+        },
+        {
+            "id": 49,
+            "level": "avancado",
+            "question": "Como se diz 'Decepcionante' em inglês?",
+            "options": [
+                "Disappointing",
+                "Satisfactory",
+                "Fulfilling",
+                "Impressive"
+            ],
+            "correctAnswer": "Disappointing",
+            "explanation": "A palavra 'Disappointing' em inglês significa 'Decepcionante' em português."
+        },
+        {
+            "id": 50,
+            "level": "avancado",
+            "question": "O que significa 'Pragmatic' em português?",
+            "options": [
+                "Pragmático",
+                "Dramático",
+                "Aromático",
+                "Sistemático"
+            ],
+            "correctAnswer": "Pragmático",
+            "explanation": "A palavra 'Pragmatic' em inglês significa 'Pragmático' em português."
+        },
+        {
+            "id": 51,
+            "level": "avancado",
+            "question": "Como se diz 'Insight' em português?",
+            "options": [
+                "Visão",
+                "Insight",
+                "Perspicácia",
+                "Compreensão"
+            ],
+            "correctAnswer": "Insight",
+            "explanation": "A palavra 'Insight' em inglês significa 'Insight' em português."
+        },
+        {
+            "id": 52,
+            "level": "avancado",
+            "question": "O que significa 'Conundrum' em português?",
+            "options": [
+                "Conundro",
+                "Enigma",
+                "Dilema",
+                "Contradição"
+            ],
+            "correctAnswer": "Enigma",
+            "explanation": "A palavra 'Conundrum' em inglês significa 'Enigma' em português."
+        },
+        {
+            "id": 53,
+            "level": "avancado",
+            "question": "Qual é o oposto de 'Ubiquitous' em inglês?",
+            "options": [
+                "Widespread",
+                "Common",
+                "Pervasive",
+                "Scarce"
+            ],
+            "correctAnswer": "Scarce",
+            "explanation": "A palavra 'Ubiquitous' em inglês significa 'Ubíquo' em português e seu oposto é 'Scarce'."
+        },
+        {
+            "id": 54,
+            "level": "avancado",
+            "question": "O que significa 'Mitigate' em português?",
+            "options": [
+                "Mitigar",
+                "Migrar",
+                "Mitar",
+                "Meditar"
+            ],
+            "correctAnswer": "Mitigar",
+            "explanation": "A palavra 'Mitigate' em inglês significa 'Mitigar' em português."
+        },
+        {
+            "id": 55,
+            "level": "avancado",
+            "question": "Como se diz 'Reticent' em português?",
+            "options": [
+                "Reticente",
+                "Revelador",
+                "Resistente",
+                "Retórico"
+            ],
+            "correctAnswer": "Reticente",
+            "explanation": "A palavra 'Reticent' em inglês significa 'Reticente' em português."
+        },
+        {
+            "id": 56,
+            "level": "avancado",
+            "question": "O que significa 'Ubiquity' em português?",
+            "options": [
+                "Ubiquidade",
+                "Unicidade",
+                "Unidade",
+                "Uniformidade"
+            ],
+            "correctAnswer": "Ubiquidade",
+            "explanation": "A palavra 'Ubiquity' em inglês significa 'Ubiquidade' em português."
+        },
+        {
+            "id": 57,
+            "level": "avancado",
+            "question": "Qual é o oposto de 'Opaque' em inglês?",
+            "options": [
+                "Clear",
+                "Dark",
+                "Cloudy",
+                "Foggy"
+            ],
+            "correctAnswer": "Clear",
+            "explanation": "A palavra 'Opaque' em inglês significa 'Opaco' em português e seu oposto é 'Clear'."
+        },
+        {
+            "id": 58,
+            "level": "avancado",
+            "question": "O que significa 'Incessant' em português?",
+            "options": [
+                "Incessante",
+                "Insistente",
+                "Inconstante",
+                "Incomum"
+            ],
+            "correctAnswer": "Incessante",
+            "explanation": "A palavra 'Incessant' em inglês significa 'Incessante' em português."
+        },
+        {
+            "id": 59,
+            "level": "avancado",
+            "question": "Como se diz 'Arbitrário' em inglês?",
+            "options": [
+                "Arbitrary",
+                "Arduous",
+                "Arcane",
+                "Ardent"
+            ],
+            "correctAnswer": "Arbitrary",
+            "explanation": "A palavra 'Arbitrary' em inglês significa 'Arbitrário' em português."
+        },
+        {
+            "id": 60,
+            "level": "avancado",
+            "question": "O que significa 'Debilitate' em português?",
+            "options": [
+                "Debilitar",
+                "Debater",
+                "Debulhar",
+                "Debuxar"
+            ],
+            "correctAnswer": "Debilitar",
+            "explanation": "A palavra 'Debilitate' em inglês significa 'Debilitar' em português."
+        }
+    ]
+}
