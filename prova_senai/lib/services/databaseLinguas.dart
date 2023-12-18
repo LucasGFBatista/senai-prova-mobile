@@ -40,23 +40,24 @@ class DatabaseLinguas {
     List<Map<String, dynamic>> users = await bd.rawQuery(sql);
 
     for (var user in users) {
-      print("ID: ${user['id']}, name: ${user['name']}, E-mail: ${user['email']}");
+      print(
+          "ID: ${user['id']}, name: ${user['name']}, E-mail: ${user['email']}");
     }
   }
 
   // Atualizar user
-  static updateUser(int id, String newName, String newEmail, String newPassword) async {
+  static updateUser(
+      int id, String newName, String newEmail, String newPassword) async {
     Database bd = await _recuperarBancoDados();
     Map<String, dynamic> dataUser = {
       "name": newName,
       "email": newEmail,
       "password": newPassword,
     };
-    int retorno = await bd.update("users", dataUser,
-        where: "id=?", whereArgs: [id]);
+    int retorno =
+        await bd.update("users", dataUser, where: "id=?", whereArgs: [id]);
     print(retorno);
   }
-
 
   // Esse aqui é para pegar o user por nome
   static Future<Map<String, dynamic>?> getUserByName(String name) async {
@@ -76,22 +77,19 @@ class DatabaseLinguas {
   }
 
 // Função pegar usuario por email, para usar no loggin
-static Future<Map<String, dynamic>?> getUserByEmail(String email) async {
-  Database bd = await _recuperarBancoDados();
+  static Future<Map<String, dynamic>?> getUserByEmail(String email) async {
+    Database bd = await _recuperarBancoDados();
 
-  List<Map<String, dynamic>> users = await bd.query(
-    "users",
-    where: "email = ?",
-    whereArgs: [email],
-  );
+    List<Map<String, dynamic>> users = await bd.query(
+      "users",
+      where: "email = ?",
+      whereArgs: [email],
+    );
 
-  if (users.isNotEmpty) {
-    return users.first;
-  } else {
-    return null;
+    if (users.isNotEmpty) {
+      return users.first;
+    } else {
+      return null;
+    }
   }
-}
-
-
-
 }
