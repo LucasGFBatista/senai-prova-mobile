@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prova_senai/services/databaseLinguas.dart';
+import 'package:prova_senai/services/auth_service.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -9,9 +10,15 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
+
+  //Controllers
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController ConfirmPasswordController = TextEditingController();
+
+  //Autenticação
+  AuthService authService = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -91,11 +98,41 @@ class _SignupPageState extends State<SignupPage> {
                     backgroundColor: Colors.blue,
                     padding: EdgeInsets.symmetric(vertical: 15),
                   ),
-                  onPressed: () {
-                    // Hudson, temos que ver depois como vai ser feito essa parte
+                  onPressed: () async {
+                    String name = nameController.text;
+                    String email = emailController.text;
+                    String password= passwordController.text;
+                    String confitmPassword = ConfirmPasswordController.text;
 
-                    DatabaseLinguas.saveUser(nameController.text,
-                        emailController.text, passwordController.text);
+                    // Verifica se o e-mail já está cadastrado
+                    bool emailExists = await authService.verifyNewAccount(email);
+
+                    if (emailExists) {
+                      // Exibe mensagem de erro
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text("Erro de Cadastro"),
+                            content: Text(
+                                "E-mail já cadastrado. Por favor, escolha outro."),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Text("OK"),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    } else {
+                      
+                      //Salvar no banco de dados
+                      DatabaseLinguas.saveUser(name, email, password);
+                      print("Conta criada");
+                    }
                   },
                   child: Text(
                     "Criar Conta",
