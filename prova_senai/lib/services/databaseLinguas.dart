@@ -58,7 +58,7 @@ class DatabaseLinguas {
   }
 
 
-  // Esse aqui é para pegar o user por nome, para usar no loggin
+  // Esse aqui é para pegar o user por nome
   static Future<Map<String, dynamic>?> getUserByName(String name) async {
     Database bd = await _recuperarBancoDados();
 
@@ -74,6 +74,24 @@ class DatabaseLinguas {
       return null;
     }
   }
+
+// Função pegar usuario por email, para usar no loggin
+static Future<Map<String, dynamic>?> getUserByEmail(String email) async {
+  Database bd = await _recuperarBancoDados();
+
+  List<Map<String, dynamic>> users = await bd.query(
+    "users",
+    where: "email = ?",
+    whereArgs: [email],
+  );
+
+  if (users.isNotEmpty) {
+    return users.first;
+  } else {
+    return null;
+  }
+}
+
 
 
 }
