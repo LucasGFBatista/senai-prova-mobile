@@ -76,11 +76,11 @@
 
 ## Telas a serem feitas
 - [x] [Tela 1 - Boas vindas](/prova_senai/lib/pages/onboard.page.dart)
-- [ ] [Opção cadastro ou login](/prova_senai/lib/pages/onboard.page.dart)
+- [x] [Opção cadastro ou login](/prova_senai/lib/pages/onboard.page.dart)
 	- [x] [Formulário cadastro](/prova_senai/lib/pages/singup.page.dart)
-        - [ ] Lógica de cadastro (inserção de novo usuario no banco de dados)
+        - [x] Lógica de cadastro (inserção de novo usuario no banco de dados)
 	- [x] [Formulário de Login](/prova_senai/lib/pages/login.page.dart)
-        - [ ] Lógica de login e verificação no banco de dados
+        - [x] Lógica de login e verificação no banco de dados
 - [x] Seleção Nível de dificuldade
 - [x] Tela ensinando algo em inglês
 - [ ] Teste de compreensão (Questões de múltiplas escolhas)

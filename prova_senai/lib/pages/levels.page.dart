@@ -1,14 +1,16 @@
-// Criando a tela para perguntar os levels do usuarrio e depois disso passar para tela de perguntas
 import 'package:flutter/material.dart';
+import 'package:prova_senai/pages/questions.page.dart';  
 
-class LevelChoise extends StatefulWidget {
-  const LevelChoise({super.key});
+class LevelChoice extends StatefulWidget {
+  const LevelChoice({Key? key}) : super(key: key);
 
   @override
-  State<LevelChoise> createState() => _LevelChoiseState();
+  State<LevelChoice> createState() => _LevelChoiceState();
 }
 
-class _LevelChoiseState extends State<LevelChoise> {
+class _LevelChoiceState extends State<LevelChoice> {
+  String selectedLevel = "";  // Adicionamos uma variável para armazenar o nível selecionado
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,14 +38,7 @@ class _LevelChoiseState extends State<LevelChoise> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  /*
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ,
-                    ),
-                  );
-                */
+                  selectLevel("iniciante");  // Ao pressionar o botão, selecionamos o nível "iniciante"
                 },
                 child: Text(
                   "Iniciante",
@@ -60,14 +55,7 @@ class _LevelChoiseState extends State<LevelChoise> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  /*
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ,
-                    ),
-                  );
-                */
+                  selectLevel("intermediario");  // Ao pressionar o botão, selecionamos o nível "intermediario"
                 },
                 child: Text(
                   "Intermediário",
@@ -84,14 +72,7 @@ class _LevelChoiseState extends State<LevelChoise> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  /*
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ,
-                    ),
-                  );
-                */
+                  selectLevel("avancado");  // Ao pressionar o botão, selecionamos o nível "avancado"
                 },
                 child: Text(
                   "Avançado",
@@ -104,6 +85,19 @@ class _LevelChoiseState extends State<LevelChoise> {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  void selectLevel(String level) {
+    setState(() {
+      selectedLevel = level;  // Atualiza o nível selecionado
+    });
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => Questions(level: selectedLevel),  // Passa o nível selecionado para a tela Questions
       ),
     );
   }

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prova_senai/pages/home.page.dart';
 import 'package:prova_senai/services/auth_service.dart';
-import 'package:prova_senai/services/databaseLinguas.dart';
 import 'package:prova_senai/pages/levels.page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -23,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.blue[50],
       appBar: AppBar(
         backgroundColor: Colors.blue[50],
-        elevation: 0, // Removendo a sombra do AppBar
+        elevation: 0, 
       ),
       body: Padding(
         padding: EdgeInsets.all(20),

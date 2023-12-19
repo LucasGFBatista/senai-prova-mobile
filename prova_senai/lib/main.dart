@@ -4,7 +4,6 @@ import 'package:prova_senai/services/databaseLinguas.dart';
 import 'package:prova_senai/pages/onboard.page.dart';
 import 'package:prova_senai/pages/singup.page.dart';
 import 'package:prova_senai/pages/teachingBeginner.page.dart';
-
 import 'package:prova_senai/pages/quizScreen.dart';
 
 void main() {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.teal),
 
       //Tem que iniciar com essa tela, mas para teste tô colocando como login
-      //home: WelcomePage(),
+      home: WelcomePage(),
 
       //Testar a página de login
       //home: LoginPage(),
@@ -27,9 +26,10 @@ class MyApp extends StatelessWidget {
       //Testar o banco de dados
       //home: SignupPage(),
 
-
       //tela ensinando algo
-      home: QuizScreen(),
+      //home: QuizScreen(),
+
+      //home: MyHomePage(userName: ""),
     );
   }
 }
