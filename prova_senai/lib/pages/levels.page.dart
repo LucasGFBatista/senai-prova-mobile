@@ -9,7 +9,7 @@ class LevelChoice extends StatefulWidget {
 }
 
 class _LevelChoiceState extends State<LevelChoice> {
-  String selectedLevel = "";  // Adicionamos uma variável para armazenar o nível selecionado
+  String selectedLevel = "";  
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class _LevelChoiceState extends State<LevelChoice> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  selectLevel("iniciante");  // Ao pressionar o botão, selecionamos o nível "iniciante"
+                  selectLevel("iniciante");  
                 },
                 child: Text(
                   "Iniciante",
@@ -55,7 +55,7 @@ class _LevelChoiceState extends State<LevelChoice> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  selectLevel("intermediario");  // Ao pressionar o botão, selecionamos o nível "intermediario"
+                  selectLevel("intermediario");  
                 },
                 child: Text(
                   "Intermediário",
@@ -72,7 +72,7 @@ class _LevelChoiceState extends State<LevelChoice> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  selectLevel("avancado");  // Ao pressionar o botão, selecionamos o nível "avancado"
+                  selectLevel("avancado");  
                 },
                 child: Text(
                   "Avançado",

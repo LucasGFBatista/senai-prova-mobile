@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.blue[50],
       appBar: AppBar(
         backgroundColor: Colors.blue[50],
-        elevation: 0, 
+        elevation: 0,
       ),
       body: Padding(
         padding: EdgeInsets.all(20),
@@ -76,10 +76,12 @@ class _LoginPageState extends State<LoginPage> {
                   bool loginSuccess = await authService.login(email, password);
 
                   if (loginSuccess) {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => LevelChoise()),
-                    );
+                    Navigator.push(context,
+                        MaterialPageRoute(
+                        builder: (context) => LevelChoice()
+                        )
+                        
+                        );
                   } else {
                     showDialog(
                       context: context,
