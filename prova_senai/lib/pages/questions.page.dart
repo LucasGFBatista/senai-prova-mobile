@@ -35,7 +35,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   Future<void> loadQuestions() async {
     try {
-      final response = await Dio().get('../../assets/question.json');
+      final response = await Dio().get('assets/question.json');
 
       if (response.statusCode == 200) {
         final List<dynamic> data = jsonDecode(response.data.toString());
@@ -51,7 +51,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
           questions = loadedQuestions;
         });
       } else {
-        print('Erro ao carregar perguntas. Código de status: ${response.statusCode}');
+        print(
+            'Erro ao carregar perguntas. Código de status: ${response.statusCode}');
       }
     } catch (e) {
       print('Erro ao carregar perguntas: $e');
