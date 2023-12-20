@@ -97,7 +97,8 @@ class _LevelChoiceState extends State<LevelChoice> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => Questions(level: selectedLevel),  // Passa o nível selecionado para a tela Questions
+      //Passa o nivel selecionado para tela de QuestionScreen
+        builder: (context) => QuestionScreen(level: selectedLevel),  
       ),
     );
   }

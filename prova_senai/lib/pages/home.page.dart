@@ -24,8 +24,7 @@ class _HomePageState extends State<HomePage> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     WelcomePage(),
-    //ProfilePage(), // Adicione a página de perfil aqui
-    // Adicione outras páginas conforme necessário
+    //Profile(), 
   ];
 
   @override

@@ -14,16 +14,16 @@ class Question {
   });
 }
 
-class Questions extends StatefulWidget {
+class QuestionScreen extends StatefulWidget {
   final String level;
 
-  const Questions({Key? key, required this.level}) : super(key: key);
+  const QuestionScreen({Key? key, required this.level}) : super(key: key);
 
   @override
-  _QuestionsState createState() => _QuestionsState();
+  _QuestionScreenState createState() => _QuestionScreenState();
 }
 
-class _QuestionsState extends State<Questions> {
+class _QuestionScreenState extends State<QuestionScreen> {
   late List<Question> questions;
   int? selectedOption;
 
@@ -79,13 +79,13 @@ class _QuestionsState extends State<Questions> {
                         children: question.options
                             .asMap()
                             .entries
-                            .map((entry) => RadioListTile<int>(
+                            .map((entry) => RadioListTile<String>(
                                   title: Text(entry.value),
-                                  value: entry.key,
-                                  groupValue: selectedOption,
+                                  value: entry.key.toString(),
+                                  groupValue: selectedOption?.toString(),
                                   onChanged: (value) {
                                     setState(() {
-                                      selectedOption = value;
+                                      selectedOption = int.parse(value!);
                                     });
                                   },
                                 ))
