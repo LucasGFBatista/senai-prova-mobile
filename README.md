@@ -96,18 +96,18 @@ Após a implementação das funcionalidades, a equipe realiza testes rigorosos p
 - [x] [Opção cadastro ou login](/prova_senai/lib/pages/welcome.dart)
 	- [x] [Formulário cadastro](/prova_senai/lib/pages/singup.page.dart)
 	- [x] [Formulário de Login](/prova_senai/lib/pages/login.page.dart)
-- [x] Seleção Nível de dificuldade
+- [x] [Seleção Nível de dificuldade](/prova_senai/lib/pages/levels.page.dart)
 - [ ] Tela ensinando algo em inglês
 - [ ] Teste de compreensão (Questões de múltiplas escolhas)
 - [ ] Sidebar
     - [ ] [Tela de progressos](/prova_senai/lib/pages/progress.dart)
-    - [ ] [Tela de perfil de acesso](/prova_senai/lib/pages/profile.dart)
+    - [ ] [Tela de perfil de acesso](/prova_senai/lib/pages/profile.page.dart)
         (Poder atualizar os dados do perfil)
 
 ### 2ª Etapa [Documento 2ª Etapa](/prova_senai/assets/Segunda%20Etapa%20do%20Projeto.pdf)
-- [x] Tela de cadastro de novo usuário
-- [x] Login com verificação de credencias
-- [ ] Tela de recuperação de senha
+- [x] [Formulário cadastro](/prova_senai/lib/pages/singup.page.dart)
+- [x] [Formulário de Login](/prova_senai/lib/pages/login.page.dart)
+- [ ] [Tela de recuperação de senha]()
 
 
 ### Possivel Fluxo do sistema
