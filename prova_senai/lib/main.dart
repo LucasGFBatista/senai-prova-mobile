@@ -5,6 +5,7 @@ import 'package:prova_senai/pages/onboard.page.dart';
 import 'package:prova_senai/pages/singup.page.dart';
 import 'package:prova_senai/pages/teachingBeginner.page.dart';
 import 'package:prova_senai/pages/quizScreen.dart';
+import 'package:prova_senai/pages/customDrawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       //home: QuizScreen(),
 
       //home: MyHomePage(userName: ""),
+       
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prova_senai/pages/customDrawer.dart';
 import 'package:prova_senai/services/auth_service.dart';
 import 'package:prova_senai/pages/levels.page.dart';
 
@@ -14,6 +15,9 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController passwordController = TextEditingController();
 
   AuthService authService = AuthService();
+
+  late String _userName = '';
+  late String _userEmail = '';
 
   @override
   Widget build(BuildContext context) {
@@ -76,12 +80,12 @@ class _LoginPageState extends State<LoginPage> {
                   bool loginSuccess = await authService.login(email, password);
 
                   if (loginSuccess) {
-                    Navigator.push(context,
-                        MaterialPageRoute(
-                        builder: (context) => LevelChoice()
-                        )
-                        
-                        );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => LevelChoice(
+                              userName: _userName, userEmail: _userEmail)),
+                    );
                   } else {
                     showDialog(
                       context: context,

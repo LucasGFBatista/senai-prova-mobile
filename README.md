@@ -27,7 +27,7 @@
    Certifique-se de que um emulador esteja em execução ou que um dispositivo físico esteja conectado.
 
 4. **Explore o aplicativo:**
-   O aplicativo será iniciado no dispositivo/emulador, e você poderá explorar as diferentes telas conforme a descrição fornecida no arquivo README.>)
+   O aplicativo será iniciado no dispositivo/emulador, e você poderá explorar as diferentes telas conforme a descrição fornecida no arquivo README.
 
 
 ## 1ª Etapa do projeto

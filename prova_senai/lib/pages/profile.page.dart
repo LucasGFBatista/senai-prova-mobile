@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -10,13 +9,22 @@ class Profile extends StatefulWidget {
 
 class _ProfileState extends State<Profile> {
   TextEditingController _nameController = TextEditingController();
-  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
   File? _image;
+
+  @override
+  void initState() {
+    super.initState();
+    // Substitua "NomeAtual" pelo valor real do nome atual
+    _nameController.text = "NomeAtual";
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[50],
       appBar: AppBar(
+        backgroundColor: Colors.blue[50],
         title: Text('Editar Perfil'),
       ),
       body: Padding(
@@ -46,8 +54,8 @@ class _ProfileState extends State<Profile> {
             ),
             SizedBox(height: 16),
             TextField(
-              controller: _emailController,
-              decoration: InputDecoration(labelText: 'E-mail'),
+              controller: _passwordController,
+              decoration: InputDecoration(labelText: 'Senha'),
             ),
             SizedBox(height: 16),
             ElevatedButton(
@@ -63,14 +71,9 @@ class _ProfileState extends State<Profile> {
   }
 
   void _saveChanges() {
-    // Adicione a lógica para salvar as alterações no perfil aqui
     String newName = _nameController.text;
-    String newEmail = _emailController.text;
+    String newpassword = _passwordController.text;
 
-    // Exemplo: Atualize as informações no servidor ou no armazenamento local
-    // ...
-
-    // Exemplo: Exiba uma mensagem de sucesso
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('Alterações salvas com sucesso!'),
