@@ -1,4 +1,7 @@
 # Prova Mobile - Senai
+## Colaboradores
+- [Hudson Rocha](https://github.com/RockHud1)
+- [Lucas Gonçalves](https://github.com/LucasGFBatista)
 
 ## Como rodar o projeto
 
