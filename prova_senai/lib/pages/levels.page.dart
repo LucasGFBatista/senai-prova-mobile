@@ -65,7 +65,7 @@ class _LevelChoiceState extends State<LevelChoice> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  selectLevel("iniciante");
+                  selectLevel("Iniciante");
                 },
                 child: Text(
                   "Iniciante",
@@ -82,7 +82,7 @@ class _LevelChoiceState extends State<LevelChoice> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  selectLevel("intermediario");
+                  selectLevel("Intermediario");
                 },
                 child: Text(
                   "Intermediário",
@@ -99,7 +99,7 @@ class _LevelChoiceState extends State<LevelChoice> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                 ),
                 onPressed: () {
-                  selectLevel("avancado");
+                  selectLevel("Avancado");
                 },
                 child: Text(
                   "Avançado",

@@ -1,18 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:dio/dio.dart';
-
-class Question {
-  final String questionText;
-  final List<String> options;
-  final int correctOptionIndex;
-
-  Question({
-    required this.questionText,
-    required this.options,
-    required this.correctOptionIndex,
-  });
-}
+import 'package:flutter/services.dart';
+import 'package:prova_senai/models/question.model.dart';
 
 class QuestionScreen extends StatefulWidget {
   final String level;
@@ -24,8 +13,9 @@ class QuestionScreen extends StatefulWidget {
 }
 
 class _QuestionScreenState extends State<QuestionScreen> {
-  late List<Question> questions;
-  int? selectedOption;
+  late List<Question> _questions = [];
+  Map<int, int?> selectedOptions = {};
+  int correctAnswersCount = 0;
 
   @override
   void initState() {
@@ -34,69 +24,105 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   Future<void> loadQuestions() async {
-    try {
-      final response = await Dio().get('assets/question.json');
+    final String response = await rootBundle.loadString('assets/question.json');
+    print(response);
+    final Map<String, dynamic> data = jsonDecode(response);
 
-      if (response.statusCode == 200) {
-        final List<dynamic> data = jsonDecode(response.data.toString());
-        final List<Question> loadedQuestions = data.map((item) {
-          return Question(
-            questionText: item['questionText'],
-            options: List<String>.from(item['options']),
-            correctOptionIndex: item['correctOptionIndex'],
-          );
-        }).toList();
+    if (data.containsKey('questions')) {
+      final List<dynamic> questionsData = data['questions'];
 
-        setState(() {
-          questions = loadedQuestions;
-        });
-      } else {
-        print(
-            'Erro ao carregar perguntas. Código de status: ${response.statusCode}');
-      }
-    } catch (e) {
-      print('Erro ao carregar perguntas: $e');
+      final List<Question> loadedQuestions = questionsData
+          .where((item) => item['level'] == widget.level)
+          .map((item) {
+        String? correctAnswer = item['correctAnswer'];
+        if (correctAnswer == null) {
+          correctAnswer = '0';
+        }
+
+        return Question(
+          questionText: item['questionText'],
+          options: List<String>.from(item['options']),
+          correctAnswer: correctAnswer,
+        );
+      }).toList();
+
+      setState(() {
+        _questions = loadedQuestions;
+      });
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    backgroundColor: Colors.blue[50],
       appBar: AppBar(
+      backgroundColor: Colors.blue[50],
         title: Text("Perguntas - ${widget.level}"),
       ),
       body: Center(
-        child: questions == null
-            ? CircularProgressIndicator()
-            : ListView.builder(
-                itemCount: questions.length,
-                itemBuilder: (context, index) {
-                  final question = questions[index];
-                  return Card(
-                    child: ListTile(
-                      title: Text(question.questionText),
-                      subtitle: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: question.options
-                            .asMap()
-                            .entries
-                            .map((entry) => RadioListTile<String>(
-                                  title: Text(entry.value),
-                                  value: entry.key.toString(),
-                                  groupValue: selectedOption?.toString(),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      selectedOption = int.parse(value!);
-                                    });
-                                  },
-                                ))
-                            .toList(),
-                      ),
+        child: _questions.isNotEmpty
+            ? Column(
+                children: [
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: _questions.length,
+                      itemBuilder: (context, index) {
+                        final question = _questions[index];
+                        return Card(
+                          child: ListTile(
+                            title: Text(question.questionText),
+                            subtitle: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: question.options
+                                  .asMap()
+                                  .entries
+                                  .map((entry) => RadioListTile<int>(
+                                        title: Text(entry.value),
+                                        value: entry.key,
+                                        groupValue: selectedOptions[index],
+                                        onChanged: (value) {
+                                          setState(() {
+                                            selectedOptions[index] = value;
+                                          });
+                                        },
+                                      ))
+                                  .toList(),
+                            ),
+                          ),
+                        );
+                      },
                     ),
-                  );
-                },
-              ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      checkAnswers();
+                    },
+                    child: Text('Verificar Respostas'),
+                  ),
+                ],
+              )
+            : CircularProgressIndicator(),
       ),
     );
+  }
+
+
+//Verificar quantidade de respostas certas
+  void checkAnswers() {
+    int count = 0;
+    for (int i = 0; i < _questions.length; i++) {
+      final question = _questions[i];
+      final selectedOption = selectedOptions[i];
+      if (selectedOption != null && selectedOption == question.correctAnswer) {
+        count++;
+      }
+    }
+
+    setState(() {
+      correctAnswersCount = count;
+    });
+
+    print('Respostas corretas: $correctAnswersCount');
   }
 }
