@@ -2,8 +2,8 @@
     "questions": [
         {
             "id": 1,
-            "level": "iniciante",
-            "question": "O que significa 'Goodbye' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Goodbye' em português?",
             "options": [
                 "Adeus",
                 "Olá",
@@ -15,8 +15,8 @@
         },
         {
             "id": 2,
-            "level": "iniciante",
-            "question": "O que significa 'Thank you' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Thank you' em português?",
             "options": [
                 "Desculpe",
                 "Sim",
@@ -28,8 +28,8 @@
         },
         {
             "id": 3,
-            "level": "iniciante",
-            "question": "Como se diz 'Sim' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Sim' em inglês?",
             "options": [
                 "No",
                 "Yes",
@@ -41,8 +41,8 @@
         },
         {
             "id": 4,
-            "level": "iniciante",
-            "question": "O que significa 'I love you' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'I love you' em português?",
             "options": [
                 "Eu te odeio",
                 "Eu te amo",
@@ -54,8 +54,8 @@
         },
         {
             "id": 5,
-            "level": "iniciante",
-            "question": "Como se diz 'água' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'água' em inglês?",
             "options": [
                 "Sun",
                 "Water",
@@ -67,8 +67,8 @@
         },
         {
             "id": 6,
-            "level": "iniciante",
-            "question": "O que significa 'Hello' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Hello' em português?",
             "options": [
                 "Adeus",
                 "Tchau",
@@ -80,8 +80,8 @@
         },
         {
             "id": 7,
-            "level": "iniciante",
-            "question": "Como se diz 'Livro' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Livro' em inglês?",
             "options": [
                 "Book",
                 "Table",
@@ -93,8 +93,8 @@
         },
         {
             "id": 8,
-            "level": "iniciante",
-            "question": "O que significa 'Please' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Please' em português?",
             "options": [
                 "Por favor",
                 "Obrigado",
@@ -106,8 +106,8 @@
         },
         {
             "id": 9,
-            "level": "iniciante",
-            "question": "Como se diz 'Gato' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Gato' em inglês?",
             "options": [
                 "Dog",
                 "Cat",
@@ -119,8 +119,8 @@
         },
         {
             "id": 10,
-            "level": "iniciante",
-            "question": "O que significa 'How are you?' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'How are you?' em português?",
             "options": [
                 "Quem é você?",
                 "Como você está?",
@@ -132,8 +132,8 @@
         },
         {
             "id": 11,
-            "level": "iniciante",
-            "question": "Como se diz 'Pão' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Pão' em inglês?",
             "options": [
                 "Butter",
                 "Bread",
@@ -145,8 +145,8 @@
         },
         {
             "id": 12,
-            "level": "iniciante",
-            "question": "O que significa 'Sorry' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Sorry' em português?",
             "options": [
                 "Feliz",
                 "Triste",
@@ -158,8 +158,8 @@
         },
         {
             "id": 13,
-            "level": "iniciante",
-            "question": "Como se diz 'Casa' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Casa' em inglês?",
             "options": [
                 "House",
                 "Tree",
@@ -171,8 +171,8 @@
         },
         {
             "id": 14,
-            "level": "iniciante",
-            "question": "O que significa 'Friend' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Friend' em português?",
             "options": [
                 "Amigo",
                 "Inimigo",
@@ -184,8 +184,8 @@
         },
         {
             "id": 15,
-            "level": "iniciante",
-            "question": "Como se diz 'Verde' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Verde' em inglês?",
             "options": [
                 "Red",
                 "Blue",
@@ -197,8 +197,8 @@
         },
         {
             "id": 16,
-            "level": "iniciante",
-            "question": "O que significa 'Where is the bathroom?' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Where is the bathroom?' em português?",
             "options": [
                 "Onde está o banheiro?",
                 "Onde está a cozinha?",
@@ -210,8 +210,8 @@
         },
         {
             "id": 17,
-            "level": "iniciante",
-            "question": "Como se diz 'Sol' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Sol' em inglês?",
             "options": [
                 "Moon",
                 "Star",
@@ -223,8 +223,8 @@
         },
         {
             "id": 18,
-            "level": "iniciante",
-            "question": "O que significa 'Big' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Big' em português?",
             "options": [
                 "Pequeno",
                 "Médio",
@@ -236,8 +236,8 @@
         },
         {
             "id": 19,
-            "level": "iniciante",
-            "question": "Como se diz 'Maçã' em inglês?",
+            "level": "Iniciante",
+            "questionText": "Como se diz 'Maçã' em inglês?",
             "options": [
                 "Banana",
                 "Apple",
@@ -249,8 +249,8 @@
         },
         {
             "id": 20,
-            "level": "iniciante",
-            "question": "O que significa 'Happy' em português?",
+            "level": "Iniciante",
+            "questionText": "O que significa 'Happy' em português?",
             "options": [
                 "Feliz",
                 "Triste",
@@ -262,8 +262,8 @@
         },
         {
             "id": 21,
-            "level": "intermediario",
-            "question": "Como se diz 'Cachorro' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Como se diz 'Cachorro' em inglês?",
             "options": [
                 "Cat",
                 "Dog",
@@ -275,8 +275,8 @@
         },
         {
             "id": 22,
-            "level": "intermediario",
-            "question": "O que significa 'Good morning' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Good morning' em português?",
             "options": [
                 "Boa tarde",
                 "Boa noite",
@@ -288,8 +288,8 @@
         },
         {
             "id": 23,
-            "level": "intermediario",
-            "question": "Qual é o oposto de 'Fast' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Qual é o oposto de 'Fast' em inglês?",
             "options": [
                 "Slow",
                 "Quick",
@@ -301,8 +301,8 @@
         },
         {
             "id": 24,
-            "level": "intermediario",
-            "question": "O que significa 'Computer' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Computer' em português?",
             "options": [
                 "Televisão",
                 "Computador",
@@ -314,8 +314,8 @@
         },
         {
             "id": 25,
-            "level": "intermediario",
-            "question": "Como se diz 'Almoço' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Como se diz 'Almoço' em inglês?",
             "options": [
                 "Dinner",
                 "Lunch",
@@ -327,8 +327,8 @@
         },
         {
             "id": 26,
-            "level": "intermediario",
-            "question": "O que significa 'Weather' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Weather' em português?",
             "options": [
                 "Tempo",
                 "Estação",
@@ -340,8 +340,8 @@
         },
         {
             "id": 27,
-            "level": "intermediario",
-            "question": "Qual é o significado de 'Travel' em português?",
+            "level": "Intermediario",
+            "questionText": "Qual é o significado de 'Travel' em português?",
             "options": [
                 "Trabalhar",
                 "Viajar",
@@ -353,8 +353,8 @@
         },
         {
             "id": 28,
-            "level": "intermediario",
-            "question": "O que significa 'City' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'City' em português?",
             "options": [
                 "Vila",
                 "Cidade",
@@ -366,8 +366,8 @@
         },
         {
             "id": 29,
-            "level": "intermediario",
-            "question": "Como se diz 'Telefone' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Como se diz 'Telefone' em inglês?",
             "options": [
                 "Radio",
                 "Television",
@@ -379,8 +379,8 @@
         },
         {
             "id": 30,
-            "level": "intermediario",
-            "question": "O que significa 'Happiness' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Happiness' em português?",
             "options": [
                 "Tristeza",
                 "Alegria",
@@ -392,8 +392,8 @@
         },
         {
             "id": 31,
-            "level": "intermediario",
-            "question": "Como se diz 'Bola' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Como se diz 'Bola' em inglês?",
             "options": [
                 "Ball",
                 "Circle",
@@ -405,8 +405,8 @@
         },
         {
             "id": 32,
-            "level": "intermediario",
-            "question": "O que significa 'Education' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Education' em português?",
             "options": [
                 "Educação",
                 "Trabalho",
@@ -418,8 +418,8 @@
         },
         {
             "id": 33,
-            "level": "intermediario",
-            "question": "Qual é o oposto de 'Happy' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Qual é o oposto de 'Happy' em inglês?",
             "options": [
                 "Sad",
                 "Angry",
@@ -431,8 +431,8 @@
         },
         {
             "id": 34,
-            "level": "intermediario",
-            "question": "Como se diz 'Trabalho' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Como se diz 'Trabalho' em inglês?",
             "options": [
                 "Study",
                 "Work",
@@ -444,8 +444,8 @@
         },
         {
             "id": 35,
-            "level": "intermediario",
-            "question": "O que significa 'Music' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Music' em português?",
             "options": [
                 "Música",
                 "Pintura",
@@ -457,8 +457,8 @@
         },
         {
             "id": 36,
-            "level": "intermediario",
-            "question": "Qual é o significado de 'Friendship' em português?",
+            "level": "Intermediario",
+            "questionText": "Qual é o significado de 'Friendship' em português?",
             "options": [
                 "Inimizade",
                 "Amizade",
@@ -470,8 +470,8 @@
         },
         {
             "id": 37,
-            "level": "intermediario",
-            "question": "Como se diz 'Carro' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Como se diz 'Carro' em inglês?",
             "options": [
                 "Car",
                 "Bike",
@@ -483,8 +483,8 @@
         },
         {
             "id": 38,
-            "level": "intermediario",
-            "question": "O que significa 'Nature' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Nature' em português?",
             "options": [
                 "Natureza",
                 "Construção",
@@ -496,8 +496,8 @@
         },
         {
             "id": 39,
-            "level": "intermediario",
-            "question": "Qual é o oposto de 'Cold' em inglês?",
+            "level": "Intermediario",
+            "questionText": "Qual é o oposto de 'Cold' em inglês?",
             "options": [
                 "Hot",
                 "Warm",
@@ -509,8 +509,8 @@
         },
         {
             "id": 40,
-            "level": "intermediario",
-            "question": "O que significa 'Family' em português?",
+            "level": "Intermediario",
+            "questionText": "O que significa 'Family' em português?",
             "options": [
                 "Família",
                 "Amigos",
@@ -522,8 +522,8 @@
         },
         {
             "id": 41,
-            "level": "avancado",
-            "question": "Como se diz 'Eletrodoméstico' em inglês?",
+            "level": "Avancado",
+            "questionText": "Como se diz 'Eletrodoméstico' em inglês?",
             "options": [
                 "Appliance",
                 "Gadget",
@@ -535,8 +535,8 @@
         },
         {
             "id": 42,
-            "level": "avancado",
-            "question": "O que significa 'Sustainable' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Sustainable' em português?",
             "options": [
                 "Sustentável",
                 "Superficial",
@@ -548,8 +548,8 @@
         },
         {
             "id": 43,
-            "level": "avancado",
-            "question": "Qual é o oposto de 'Conventional' em inglês?",
+            "level": "Avancado",
+            "questionText": "Qual é o oposto de 'Conventional' em inglês?",
             "options": [
                 "Modern",
                 "Traditional",
@@ -561,8 +561,8 @@
         },
         {
             "id": 44,
-            "level": "avancado",
-            "question": "O que significa 'Ubiquitous' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Ubiquitous' em português?",
             "options": [
                 "Único",
                 "Ubíquo",
@@ -574,8 +574,8 @@
         },
         {
             "id": 45,
-            "level": "avancado",
-            "question": "Como se diz 'Compreensão' em inglês?",
+            "level": "Avancado",
+            "questionText": "Como se diz 'Compreensão' em inglês?",
             "options": [
                 "Comprehension",
                 "Understanding",
@@ -587,8 +587,8 @@
         },
         {
             "id": 46,
-            "level": "avancado",
-            "question": "O que significa 'Ephemeral' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Ephemeral' em português?",
             "options": [
                 "Eterno",
                 "Efêmero",
@@ -600,8 +600,8 @@
         },
         {
             "id": 47,
-            "level": "avancado",
-            "question": "Qual é o significado de 'Ineffable' em português?",
+            "level": "Avancado",
+            "questionText": "Qual é o significado de 'Ineffable' em português?",
             "options": [
                 "Inefável",
                 "Ineficaz",
@@ -613,8 +613,8 @@
         },
         {
             "id": 48,
-            "level": "avancado",
-            "question": "O que significa 'Equanimity' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Equanimity' em português?",
             "options": [
                 "Equanimidade",
                 "Equidade",
@@ -626,8 +626,8 @@
         },
         {
             "id": 49,
-            "level": "avancado",
-            "question": "Como se diz 'Decepcionante' em inglês?",
+            "level": "Avancado",
+            "questionText": "Como se diz 'Decepcionante' em inglês?",
             "options": [
                 "Disappointing",
                 "Satisfactory",
@@ -639,8 +639,8 @@
         },
         {
             "id": 50,
-            "level": "avancado",
-            "question": "O que significa 'Pragmatic' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Pragmatic' em português?",
             "options": [
                 "Pragmático",
                 "Dramático",
@@ -652,8 +652,8 @@
         },
         {
             "id": 51,
-            "level": "avancado",
-            "question": "Como se diz 'Insight' em português?",
+            "level": "Avancado",
+            "questionText": "Como se diz 'Insight' em português?",
             "options": [
                 "Visão",
                 "Insight",
@@ -665,8 +665,8 @@
         },
         {
             "id": 52,
-            "level": "avancado",
-            "question": "O que significa 'Conundrum' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Conundrum' em português?",
             "options": [
                 "Conundro",
                 "Enigma",
@@ -678,8 +678,8 @@
         },
         {
             "id": 53,
-            "level": "avancado",
-            "question": "Qual é o oposto de 'Ubiquitous' em inglês?",
+            "level": "Avancado",
+            "questionText": "Qual é o oposto de 'Ubiquitous' em inglês?",
             "options": [
                 "Widespread",
                 "Common",
@@ -691,8 +691,8 @@
         },
         {
             "id": 54,
-            "level": "avancado",
-            "question": "O que significa 'Mitigate' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Mitigate' em português?",
             "options": [
                 "Mitigar",
                 "Migrar",
@@ -704,8 +704,8 @@
         },
         {
             "id": 55,
-            "level": "avancado",
-            "question": "Como se diz 'Reticent' em português?",
+            "level": "Avancado",
+            "questionText": "Como se diz 'Reticent' em português?",
             "options": [
                 "Reticente",
                 "Revelador",
@@ -717,8 +717,8 @@
         },
         {
             "id": 56,
-            "level": "avancado",
-            "question": "O que significa 'Ubiquity' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Ubiquity' em português?",
             "options": [
                 "Ubiquidade",
                 "Unicidade",
@@ -730,8 +730,8 @@
         },
         {
             "id": 57,
-            "level": "avancado",
-            "question": "Qual é o oposto de 'Opaque' em inglês?",
+            "level": "Avancado",
+            "questionText": "Qual é o oposto de 'Opaque' em inglês?",
             "options": [
                 "Clear",
                 "Dark",
@@ -743,8 +743,8 @@
         },
         {
             "id": 58,
-            "level": "avancado",
-            "question": "O que significa 'Incessant' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Incessant' em português?",
             "options": [
                 "Incessante",
                 "Insistente",
@@ -756,8 +756,8 @@
         },
         {
             "id": 59,
-            "level": "avancado",
-            "question": "Como se diz 'Arbitrário' em inglês?",
+            "level": "Avancado",
+            "questionText": "Como se diz 'Arbitrário' em inglês?",
             "options": [
                 "Arbitrary",
                 "Arduous",
@@ -769,8 +769,8 @@
         },
         {
             "id": 60,
-            "level": "avancado",
-            "question": "O que significa 'Debilitate' em português?",
+            "level": "Avancado",
+            "questionText": "O que significa 'Debilitate' em português?",
             "options": [
                 "Debilitar",
                 "Debater",
