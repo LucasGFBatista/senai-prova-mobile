@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:prova_senai/models/question.model.dart';
 import 'package:prova_senai/models/progress.model.dart';
+import 'package:prova_senai/pages/progress.page.dart';
 
 class QuestionScreen extends StatefulWidget {
   final String level;
@@ -142,6 +143,17 @@ class _QuestionScreenState extends State<QuestionScreen> {
       percentage: percentage,
       correctAnswers: correctAnswersCount,
       totalQuestions: _questions.length,
+    );
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ProgressPage(
+          userName: '',
+          userEmail: '',
+          progress: progress,
+        ),
+      ),
     );
   }
 }
