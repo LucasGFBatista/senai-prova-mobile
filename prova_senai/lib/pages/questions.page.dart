@@ -84,7 +84,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                         onChanged: (value) {
                                           setState(() {
                                             selectedOptions[index] = value;
-                                            
+
                                             //print(selectedOptions[index]);
                                           });
                                         },
@@ -127,6 +127,14 @@ class _QuestionScreenState extends State<QuestionScreen> {
       correctAnswersCount = count;
     });
 
+    // Essas coisas são só para teste em momento de desenvolvimeno, talvez suba junto com o commit
+    print('Total de questões ${_questions.length}');
     print('Respostas corretas: $correctAnswersCount');
+    
+
+    // A apartir daqui começa a calcular os dados para tela de progresso
+    double percentage = (correctAnswersCount / _questions.length) * 100;
+
+    print('Porcetangem: $percentage%');
   }
 }
