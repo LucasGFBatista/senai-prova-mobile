@@ -10,13 +10,13 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   TextEditingController _nameController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
+  TextEditingController _confirmPasswordController = TextEditingController();
   File? _image;
 
   @override
   void initState() {
     super.initState();
-    // Substitua "NomeAtual" pelo valor real do nome atual
-    _nameController.text = "NomeAtual";
+    _nameController.text = '';
   }
 
   @override
@@ -55,7 +55,14 @@ class _ProfileState extends State<Profile> {
             SizedBox(height: 16),
             TextField(
               controller: _passwordController,
+              obscureText: true,
               decoration: InputDecoration(labelText: 'Senha'),
+            ),
+            SizedBox(height: 16),
+            TextField(
+              controller: _confirmPasswordController,
+              obscureText: true,
+              decoration: InputDecoration(labelText: 'Confirmar Senha'),
             ),
             SizedBox(height: 16),
             ElevatedButton(
@@ -72,7 +79,18 @@ class _ProfileState extends State<Profile> {
 
   void _saveChanges() {
     String newName = _nameController.text;
-    String newpassword = _passwordController.text;
+    String newPassword = _passwordController.text;
+    String confirmPassword = _confirmPasswordController.text;
+
+    if (newPassword != confirmPassword) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('As senhas não coincidem. Tente novamente.'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      return;
+    }
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
