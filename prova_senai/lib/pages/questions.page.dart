@@ -55,9 +55,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    backgroundColor: Colors.blue[50],
-      appBar: AppBar(
       backgroundColor: Colors.blue[50],
+      appBar: AppBar(
+        backgroundColor: Colors.blue[50],
         title: Text("Perguntas - ${widget.level}"),
       ),
       body: Center(
@@ -84,6 +84,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                         onChanged: (value) {
                                           setState(() {
                                             selectedOptions[index] = value;
+                                            
+                                            //print(selectedOptions[index]);
                                           });
                                         },
                                       ))
@@ -107,14 +109,16 @@ class _QuestionScreenState extends State<QuestionScreen> {
     );
   }
 
-
 //Verificar quantidade de respostas certas
   void checkAnswers() {
     int count = 0;
     for (int i = 0; i < _questions.length; i++) {
       final question = _questions[i];
-      final selectedOption = selectedOptions[i];
-      if (selectedOption != null && selectedOption == question.correctAnswer) {
+      final selectedOptionIndex = selectedOptions[i];
+
+      // Verifica se a opção foi selecionada e se o texto da opção é igual ao texto da opção correta
+      if (selectedOptionIndex != null &&
+          question.options[selectedOptionIndex] == question.correctAnswer) {
         count++;
       }
     }
