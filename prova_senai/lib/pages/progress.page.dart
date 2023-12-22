@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:prova_senai/models/progress.model.dart';
 import 'package:prova_senai/pages/customDrawer.dart';
 
-
 class ProgressPage extends StatelessWidget {
-  final String userName;
-  final String userEmail;
+  final String? userName;
+  final String? userEmail;
   final Progress? progress;
 
   const ProgressPage({
     Key? key,
-    required this.userName,
-    required this.userEmail,
+    this.userName,
+    this.userEmail,
     this.progress,
   }) : super(key: key);
 
@@ -60,7 +59,6 @@ class ProgressPage extends StatelessWidget {
         userEmail: userEmail,
         selectedIndex: 0,
         onItemTapped: (index) {
-          // Adicione a lógica para lidar com a seleção do item
           print("Item $index selecionado");
         },
       ),
