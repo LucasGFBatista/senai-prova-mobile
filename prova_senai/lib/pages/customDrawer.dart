@@ -6,15 +6,15 @@ import 'package:prova_senai/pages/levels.page.dart';
 import 'package:prova_senai/pages/progress.page.dart';
 
 class CustomDrawer extends StatelessWidget {
-  final String userName;
-  final String userEmail;
+  final String? userName;
+  final String? userEmail;
   final int selectedIndex;
   final Function(int) onItemTapped;
 
   const CustomDrawer({
     Key? key,
-    required this.userName,
-    required this.userEmail,
+    this.userName,
+    this.userEmail,
     required this.selectedIndex,
     required this.onItemTapped,
   }) : super(key: key);
@@ -26,8 +26,8 @@ class CustomDrawer extends StatelessWidget {
       child: Column(
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text(userName),
-            accountEmail: Text(userEmail),
+            accountName: Text(userName!),
+            accountEmail: Text(userEmail!),
             currentAccountPicture: CircleAvatar(
               backgroundColor: Colors.white,
               child: Icon(
@@ -73,7 +73,7 @@ class CustomDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        ProgressPage(userName: userName, userEmail: userEmail)),
+                        ProgressPage(userName: userName!, userEmail: userEmail)),
               );
             },
           ),
@@ -87,8 +87,8 @@ class CustomDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                     builder: (context) => LevelChoice(
-                          userName: userName,
-                          userEmail: userEmail,
+                          userName: userName!,
+                          userEmail: userEmail!,
                         )),
               );
             },
