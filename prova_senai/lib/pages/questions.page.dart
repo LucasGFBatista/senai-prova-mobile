@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:prova_senai/models/question.model.dart';
+import 'package:prova_senai/models/progress.model.dart';
 
 class QuestionScreen extends StatefulWidget {
   final String level;
@@ -130,11 +131,17 @@ class _QuestionScreenState extends State<QuestionScreen> {
     // Essas coisas são só para teste em momento de desenvolvimeno, talvez suba junto com o commit
     print('Total de questões ${_questions.length}');
     print('Respostas corretas: $correctAnswersCount');
-    
 
     // A apartir daqui começa a calcular os dados para tela de progresso
     double percentage = (correctAnswersCount / _questions.length) * 100;
 
     print('Porcetangem: $percentage%');
+
+    //Instaanciando progress.model.dart
+    Progress progress = Progress(
+      percentage: percentage,
+      correctAnswers: correctAnswersCount,
+      totalQuestions: _questions.length,
+    );
   }
 }
